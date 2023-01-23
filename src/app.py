@@ -48,7 +48,6 @@ def get_specific_family_member(id):
         return jsonify({
             'status': 'failed',
             'message': 'User not found'
-
         }), 400
 
 @app.route('/members/<int:id>', methods=['DELETE'])
@@ -67,8 +66,6 @@ def delete_specific_family_member(id):
             'message': 'User not found'
 
         }), 400
-
-
 # this only runs if `$ python src/app.py` is executed
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 3000))

@@ -43,7 +43,7 @@ class FamilyStructure:
 
     def add_member(self, member):
         # append
-        pass
+        return
 
     def delete_member(self, id):
         # pop
